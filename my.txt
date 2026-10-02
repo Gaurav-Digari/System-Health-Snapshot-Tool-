@@ -1,0 +1,37 @@
+
+======SYSTEM RUNNING TIME======
+
+ 10:59:44 up  4:25,  1 user,  load average: 1.13, 1.40, 1.27
+
+
+======MEMORY USAGE======
+
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       4.1Gi       950Mi       899Mi       3.8Gi       3.5Gi
+Swap:          7.9Gi          0B       7.9Gi
+
+
+======DISK USAGE======
+
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.7G     0  3.7G   0% /dev
+tmpfs           782M  1.5M  780M   1% /run
+/dev/sda2       225G  150G   64G  71% /
+tmpfs           3.9G   25M  3.8G   1% /dev/shm
+efivarfs        154K   43K  106K  29% /sys/firmware/efi/efivars
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+/dev/sda1       975M  320K  974M   1% /boot/efi
+tmpfs           3.9G   12M  3.9G   1% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           782M  4.1M  778M   1% /run/user/1000
+
+
+======TOP 5 PROCESSES======
+
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.2  27112 16208 ?        Ss   06:33   0:04 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    06:33   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    06:33   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   06:33   0:00 [kworker/R-rcu_gp]
+
+

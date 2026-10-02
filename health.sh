@@ -22,6 +22,7 @@ do
   esac
 done
 
+echo >>$output
 echo "======SYSTEM RUNNING TIME======"
 running=$(uptime)
 echo "$running"
@@ -41,3 +42,28 @@ echo "======TOP 5 PROCESSES======"
 process=$(ps aux | head -n 5)
 echo "$process"
 echo
+
+echo "======SYSTEM RUNNING TIME======">>$output
+echo >>$output
+echo "$running" >>$output
+echo >>$output
+echo >>$output
+
+echo "======MEMORY USAGE======" >>$output
+echo >>$output
+echo "$memory" >>$output
+echo >>$output
+echo >>$output
+
+
+echo "======DISK USAGE======">>$output
+echo >>$output
+echo "$disk" >>$output
+echo >>$output
+echo >>$output
+
+echo "======TOP 5 PROCESSES======">>$output
+echo >>$output
+echo "$process" >>$output
+echo >>$output
+echo >>$output
