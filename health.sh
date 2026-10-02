@@ -21,3 +21,23 @@ do
     exit 1 ;;
   esac
 done
+
+echo "======SYSTEM RUNNING TIME======"
+running=$(uptime)
+echo "$running"
+echo
+
+echo "======MEMORY USAGE======"
+memory=$(free -h)
+echo "$memory"
+echo
+
+echo "======DISK USAGE======"
+disk=$(df -h)
+echo "$disk"
+echo
+
+echo "======TOP 5 PROCESSES======"
+process=$(ps aux | head -n 5)
+echo "$process"
+echo
